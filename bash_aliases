@@ -20,4 +20,4 @@ alias amend='git commit --amend'
 alias show='git show'
 
 # screen
-alias 'screen -ls'
+alias sls='screen -ls'
