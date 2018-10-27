@@ -102,7 +102,7 @@ set -o vi
 
 export GOPATH="$HOME/golang"
 export GOBIN="$GOPATH/bin"
-GOPATH="/u/dawson/code/golang"
+GOPATH="$HOME/code/golang"
 
 ############################################
  
