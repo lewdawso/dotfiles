@@ -5,6 +5,11 @@
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+"pathogen runtime path manipulation
+execute pathogen#infect()
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " enable syntax highlighting
 syntax on
 
@@ -13,6 +18,9 @@ set wildmenu
 
 " highlight searches
 set hlsearch
+
+" enable filetype detection and indent/plugin loading
+filetype plugin indent on
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "tabs/indents
@@ -54,9 +62,6 @@ set t_vb=
 
 " background
 set background=dark
-
-"pathogen runtime path manipulation
-execute pathogen#infect()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " file specific autocmd's
