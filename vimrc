@@ -8,7 +8,8 @@
 "pathogen runtime path manipulation
 execute pathogen#infect()
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" enable filetype detection and indent/plugin loading
+filetype plugin indent on
 
 " enable syntax highlighting
 syntax on
@@ -18,9 +19,6 @@ set wildmenu
 
 " highlight searches
 set hlsearch
-
-" enable filetype detection and indent/plugin loading
-filetype plugin indent on
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "tabs/indents
@@ -111,3 +109,19 @@ augroup go
     " GoCoverage
     autocmd FileType go nmap <leader>c <Plug>(go-coverage-toggle)
 augroup END
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" plugins
+call plug#begin('~/.vim/plugged')
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'w0rp/ale'
+Plug 'skywind3000/asyncrun.vim'
+call plug#end()
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" react
+
+" run eslintlint on write and auto fix
+autocmd BufWritePost *.jsx AsyncRun -post=checktime npx eslint --fix %
