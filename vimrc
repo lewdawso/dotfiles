@@ -94,6 +94,8 @@ nnoremap <leader>h :noh<cr>
 " make Y behave like D,C by yanking until the end of the line rather than yy
 map Y y$
 
+nnoremap <leader>s :set spell!<cr>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " go mappings
 
