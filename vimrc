@@ -117,8 +117,8 @@ augroup END
 call plug#begin('~/.vim/plugged')
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-Plug 'w0rp/ale'
 Plug 'skywind3000/asyncrun.vim'
+Plug 'prettier/vim-prettier'
 call plug#end()
 
 
