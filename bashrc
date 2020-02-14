@@ -220,3 +220,9 @@ gosrc () {
 attach() {
     screen -r "$1"
 }
+
+if [ -f ~/.nix-profile ]; then
+  export PATH="~/.nix-profile/bin:$PATH"
+fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
