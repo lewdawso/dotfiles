@@ -119,6 +119,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'prettier/vim-prettier'
+Plug 'rust-lang/rust.vim'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 
@@ -127,3 +129,6 @@ call plug#end()
 
 " run eslintlint on write and auto fix
 autocmd BufWritePost *.jsx AsyncRun -post=checktime npx eslint --fix %
+
+" colorscheme
+colorscheme gruvbox
