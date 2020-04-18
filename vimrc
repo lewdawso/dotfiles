@@ -94,7 +94,7 @@ nnoremap <leader>h :noh<cr>
 " make Y behave like D,C by yanking until the end of the line rather than yy
 map Y y$
 
-nnoremap <leader>s :set spell!<cr>
+nnoremap <leader>s :set spell!<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " go mappings
@@ -116,11 +116,14 @@ augroup END
 " plugins
 call plug#begin('~/.vim/plugged')
 Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'prettier/vim-prettier'
 Plug 'rust-lang/rust.vim'
 Plug 'morhetz/gruvbox'
+Plug 'junegunn/seoul256.vim'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 call plug#end()
 
 
@@ -132,3 +135,7 @@ autocmd BufWritePost *.jsx AsyncRun -post=checktime npx eslint --fix %
 
 " colorscheme
 colorscheme gruvbox
+
+" switch colorschemes
+nnoremap <leader>z :colorscheme seoul256<CR>
+nnoremap <leader>q :colorscheme gruvbox<CR>
