@@ -138,6 +138,8 @@ Plug 'morhetz/gruvbox'
 Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 
@@ -153,3 +155,7 @@ colorscheme gruvbox
 " switch colorschemes
 nnoremap <leader>z :colorscheme seoul256<CR>
 nnoremap <leader>q :colorscheme gruvbox<CR>
+
+" fzf stuff
+nnoremap <leader>f :Files<CR>
+nnoremap <leader>r :Rg<CR>
