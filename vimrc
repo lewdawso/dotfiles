@@ -96,6 +96,20 @@ map Y y$
 
 nnoremap <leader>s :set spell!<CR>
 
+nnoremap <leader>go :Goyo<CR>
+autocmd! User GoyoEnter nested call EnterGoyo()
+autocmd! User GoyoLeave nested call LeaveGoyo()
+
+function EnterGoyo()
+    :colorscheme seoul256
+    Limelight
+endfunction
+
+function LeaveGoyo()
+    Limelight!
+    :colorscheme gruvbox
+endfunction
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " go mappings
 
