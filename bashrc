@@ -202,7 +202,7 @@ scill() {
 ############################################################
 
 seek () {
-    grep -ir "$1" .
+    rg "$1" .
 }
 
 mk () {
@@ -225,4 +225,8 @@ if [ -f ~/.nix-profile ]; then
   export PATH="~/.nix-profile/bin:$PATH"
 fi
 
+export PATH="$PATH:$GOBIN"
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+export TERM=xterm-256color

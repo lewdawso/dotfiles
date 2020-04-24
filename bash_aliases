@@ -1,9 +1,10 @@
 # bash_aliases
 
 # systems' things
-alias ptree='pstree -hapGU dawson'
+alias ptree='pstree -hapGU $USER'
 alias wptree='watch -c pstree -hapGU $*'
 alias ll='ls -l'
+alias rm='rm -i'
 
 # open commonly used files
 alias bashrc="vim $HOME/.bashrc"
@@ -21,3 +22,6 @@ alias show='git show'
 
 # screen
 alias sls='screen -ls'
+
+# fzf
+alias v='vim $(fzf)'
