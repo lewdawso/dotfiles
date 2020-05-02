@@ -5,9 +5,6 @@
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-"pathogen runtime path manipulation
-execute pathogen#infect()
-
 " enable filetype detection and indent/plugin loading
 filetype plugin indent on
 
