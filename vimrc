@@ -140,6 +140,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'fatih/vim-go'
 call plug#end()
 
 
@@ -159,3 +160,6 @@ nnoremap <leader>q :colorscheme gruvbox<CR>
 " fzf stuff
 nnoremap <leader>f :Files<CR>
 nnoremap <leader>r :Rg<CR>
+
+" prettier config
+let g:prettier#config#tab_width = '2'
