@@ -146,6 +146,7 @@ Plug 'junegunn/limelight.vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'fatih/vim-go'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 
