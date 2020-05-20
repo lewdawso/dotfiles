@@ -132,6 +132,13 @@ augroup go
 augroup END
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vimdiff
+if &diff
+    highlight! link DiffText MatchParen
+endif
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " plugins
 call plug#begin('~/.vim/plugged')
 Plug 'pangloss/vim-javascript'
