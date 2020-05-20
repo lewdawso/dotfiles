@@ -121,6 +121,14 @@ augroup go
     autocmd FileType go nmap <leader>ml <Plug>(go-metalinter)
     " GoCoverage
     autocmd FileType go nmap <leader>c <Plug>(go-coverage-toggle)
+    " GoDefs
+    autocmd FileType go nmap <leader>d <Plug>(go-def-vertical)
+    autocmd FileType go nmap <leader>ds <Plug>(go-def-split)
+    " GoRename
+    autocmd FileType go nmap <leader>r <Plug>(go-rename)
+
+    let g:go_rename_command = 'gopls'
+    let g:go_rename_prefill = ''
 augroup END
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
