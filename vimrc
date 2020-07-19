@@ -154,6 +154,7 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'fatih/vim-go'
 Plug 'tpope/vim-fugitive'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 
@@ -176,3 +177,6 @@ nnoremap <leader>r :Rg<CR>
 
 " prettier config
 let g:prettier#config#tab_width = '2'
+
+" rust
+let g:rust_fmt_autosave = 1
