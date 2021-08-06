@@ -225,6 +225,10 @@ if [ -f ~/.nix-profile ]; then
   export PATH="~/.nix-profile/bin:$PATH"
 fi
 
+if [ -d /nix/profiles/lewdawso/default/bin ]; then
+  export PATH="/nix/profiles/lewdawso/default/bin:$PATH"
+fi
+
 export PATH="$PATH:$GOBIN"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
